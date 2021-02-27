@@ -2,5 +2,7 @@
 
 uint8_t run(String &input)
 {
-    return 1;
+    // Testing code
+    String command = arg(input, 0);
+    return RUN_SUCCESS;
 }

@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <RadioLib.h>
+#include "run.h"
 
 // LoRa Module pinouts based on https://learn.adafruit.com/assets/46254
 RFM95 fsk = new Module(8, 3, 4);
@@ -29,5 +30,6 @@ void loop()
     serial_data = Serial.readString();
     // Echo input back to user.
     Serial.println("> " + serial_data);
+    run(serial_data);
   }
 }

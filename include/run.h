@@ -4,6 +4,7 @@
 #define RUN_SUCCESS 1
 
 #include <Arduino.h>
+#include "eval.h"
 uint8_t run(String &input);
 
 #endif
