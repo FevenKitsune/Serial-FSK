@@ -4,6 +4,9 @@
 // LoRa Module pinouts based on https://learn.adafruit.com/assets/46254
 RFM95 fsk = new Module(8, 3, 4);
 
+// Serial string buffer
+String serial_data;
+
 void setup()
 {
   Serial.begin(9600);
@@ -20,5 +23,11 @@ void setup()
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
+  // Do nothing unless serial is available.
+  if (Serial.available())
+  {
+    serial_data = Serial.readString();
+    // Echo input back to user.
+    Serial.println("> " + serial_data);
+  }
 }
