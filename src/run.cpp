@@ -2,7 +2,9 @@
 
 uint8_t run(String &input)
 {
-    // Testing code
+    // Extract the command provided
     String command = arg(input, 0);
-    return RUN_SUCCESS;
+    // Search command and return status code.
+    if (command == "echo") return echo();
+    return COMMAND_NOT_FOUND;
 }
