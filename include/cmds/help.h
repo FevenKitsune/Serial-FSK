@@ -2,7 +2,7 @@
 #define HELP_H
 
 #include <Arduino.h>
-#include <directives.h>
+#include <errorcodes.h>
 uint8_t help();
 
 #endif
