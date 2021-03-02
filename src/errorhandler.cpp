@@ -12,5 +12,9 @@ uint8_t printError(uint8_t errorCode)
     case INVALID_PARAMETER:
         Serial.println(F(GEN_ERROR("Invalid parameters. Please check your inputs.")));
         break;
+    case NOT_YET_IMPLEMENTED:
+        Serial.println(F(GEN_ERROR("This command is not implemented yet.")));
+        break;
     }
+    return RUN_SUCCESS;
 }
