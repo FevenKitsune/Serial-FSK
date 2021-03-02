@@ -1,4 +1,4 @@
-#include "cmds/help.h"
+#include "cmds/help.hpp"
 
 uint8_t help()
 {

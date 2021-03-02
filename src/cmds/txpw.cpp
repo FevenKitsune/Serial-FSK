@@ -1,4 +1,4 @@
-#include "cmds/txpw.h"
+#include "cmds/txpw.hpp"
 
 uint8_t txpw(uint8_t db)
 {

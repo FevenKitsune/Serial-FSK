@@ -1,4 +1,4 @@
-#include "errorhandler.h"
+#include "errorhandler.hpp"
 
 uint8_t printError(uint8_t errorCode)
 {

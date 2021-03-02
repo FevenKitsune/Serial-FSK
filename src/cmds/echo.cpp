@@ -1,4 +1,4 @@
-#include "cmds/echo.h"
+#include "cmds/echo.hpp"
 
 uint8_t echo()
 {

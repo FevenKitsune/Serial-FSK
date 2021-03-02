@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <RadioLib.h>
-#include "run.h"
-#include "errorhandler.h"
+#include "run.hpp"
+#include "errorhandler.hpp"
 
 #define STATUS_PIN 13
 

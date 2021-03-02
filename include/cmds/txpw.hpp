@@ -2,7 +2,8 @@
 #define TXPW_H
 
 #include <Arduino.h>
-#include <errorcodes.h>
+#include "errorcodes.hpp"
+
 uint8_t txpw(uint8_t db);
 
 #endif
