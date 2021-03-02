@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <RadioLib.h>
 #include "run.h"
+#include "errorhandler.h"
 
 #define STATUS_PIN 13
 
@@ -46,6 +47,6 @@ void loop()
     serial_data = Serial.readString();
     // Echo input back to user.
     Serial.println("> " + serial_data);
-    run(serial_data);
+    printError(run(serial_data));
   }
 }

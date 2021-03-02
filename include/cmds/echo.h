@@ -2,7 +2,7 @@
 #define ECHO_H
 
 #include <Arduino.h>
-#include "directives.h"
+#include "errorcodes.h"
 
 uint8_t echo();
 
