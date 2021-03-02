@@ -1,5 +1,5 @@
-#ifndef DIRECTIVES_H
-#define DIRECTIVES_H
+#ifndef ERRORCODES_H
+#define ERRORCODES_H
 
 #define COMMAND_NOT_FOUND 0
 #define RUN_SUCCESS 1
