@@ -5,4 +5,5 @@
 #define RUN_SUCCESS 1
 #define INVALID_PARAMETER 2
 #define NOT_YET_IMPLEMENTED 3
+#define RADIOLIB_ERROR 4
 #endif

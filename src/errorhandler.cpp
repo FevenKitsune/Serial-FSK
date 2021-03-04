@@ -15,6 +15,9 @@ uint8_t printError(uint8_t errorCode)
     case NOT_YET_IMPLEMENTED:
         Serial.println(F(GEN_ERROR("This command is not implemented yet.")));
         break;
+    case RADIOLIB_ERROR:
+        Serial.println(F(GEN_ERROR("RadioLib encountered an error. Check your code.")));
+        break;
     }
     return RUN_SUCCESS;
 }

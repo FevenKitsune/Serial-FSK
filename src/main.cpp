@@ -47,6 +47,6 @@ void loop()
     serial_data = Serial.readString();
     // Echo input back to user.
     Serial.println("> " + serial_data);
-    printError(run(serial_data));
+    printError(run(serial_data, fsk));
   }
 }

@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 
-String arg(String &input, uint8_t index);
+String arg(String input, uint8_t index);
+String argToEnd(String input, uint8_t index);
 
 #endif
