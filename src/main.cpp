@@ -33,6 +33,9 @@ void setup()
   Serial.print(F("[INIT] fsk.beginFSK() returned "));
   Serial.println(state);
 
+  fsk.setFrequency(434.0);
+  Serial.println(F("[INIT] Frequency set to 434.0 MHz"));
+
   if (state == ERR_NONE)
   {
     Serial.println(F("[INIT] fsk.beginFSK() success!"));
