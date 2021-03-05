@@ -33,6 +33,13 @@ int16_t printError(int16_t errorCode)
         break;
     case ERR_INVALID_BIT_RATE:
         Serial.println(F("Invalid bitrate."));
+        break;
+    case ERR_INVALID_RX_BANDWIDTH:
+        Serial.println(F("Invalid FSK receiver bandwidth."));
+        break;
+    case ERR_RX_TIMEOUT:
+        Serial.println(F("Timeout while waiting for recieve."));
+        break;
 
     /*
      * Unknown error handling.
