@@ -1,9 +1,7 @@
 #ifndef ERRORCODES_H
 #define ERRORCODES_H
 
-#define COMMAND_NOT_FOUND 0
-#define RUN_SUCCESS 1
+#define COMMAND_NOT_FOUND 1
 #define INVALID_PARAMETER 2
 #define NOT_YET_IMPLEMENTED 3
-#define RADIOLIB_ERROR 4
 #endif
