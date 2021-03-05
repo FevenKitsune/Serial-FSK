@@ -5,6 +5,6 @@
 #include <RadioLib.h>
 #include "errorcodes.hpp"
 
-uint8_t send(String data, RFM95 &radio);
+int16_t send(String data, RFM95 &radio);
 
 #endif

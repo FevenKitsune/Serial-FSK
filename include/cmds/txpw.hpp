@@ -8,6 +8,6 @@
 #define TXPW_MIN 2
 #define TXPW_MAX 17
 
-uint8_t txpw(int8_t db, RFM95 &radio);
+int16_t txpw(int8_t db, RFM95 &radio);
 
 #endif

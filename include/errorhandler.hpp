@@ -5,6 +5,6 @@
 
 #include <Arduino.h>
 #include "errorcodes.hpp"
-uint8_t printError(uint8_t errorCode);
+int16_t printError(int16_t errorCode);
 
 #endif

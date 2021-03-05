@@ -1,6 +1,6 @@
 #include "errorhandler.hpp"
 
-uint8_t printError(uint8_t errorCode)
+int16_t printError(uint8_t errorCode)
 {
     Serial.print(F(ERROR_PREFIX));
     switch (errorCode)

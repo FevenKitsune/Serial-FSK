@@ -1,6 +1,6 @@
 #include "cmds/txpw.hpp"
 
-uint8_t txpw(int8_t db, RFM95 &radio)
+int16_t txpw(int8_t db, RFM95 &radio)
 {
     if ((db < TXPW_MIN) || (db > TXPW_MAX))
     {

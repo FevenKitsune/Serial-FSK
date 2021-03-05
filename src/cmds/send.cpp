@@ -1,6 +1,6 @@
 #include "cmds/send.hpp"
 
-uint8_t send(String data, RFM95 &radio)
+int16_t send(String data, RFM95 &radio)
 {
     int16_t status = radio.transmit(data);
     Serial.print(F("[SEND] "));

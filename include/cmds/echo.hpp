@@ -4,6 +4,6 @@
 #include <Arduino.h>
 #include "errorcodes.hpp"
 
-uint8_t echo();
+int16_t echo();
 
 #endif

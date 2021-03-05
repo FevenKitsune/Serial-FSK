@@ -10,6 +10,6 @@
 #include "cmds/txpw.hpp"
 #include "errorcodes.hpp"
 
-uint8_t run(String &serial_data, RFM95 &radio);
+int16_t run(String &serial_data, RFM95 &radio);
 
 #endif

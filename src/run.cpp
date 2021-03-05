@@ -1,6 +1,6 @@
 #include "run.hpp"
 
-uint8_t run(String &serial_data, RFM95 &radio)
+int16_t run(String &serial_data, RFM95 &radio)
 {
     // Extract the command provided
     String command = arg(serial_data, 0);

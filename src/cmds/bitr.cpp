@@ -1,6 +1,6 @@
 #include "cmds/bitr.hpp"
 
-uint8_t bitr(float bitrate, RFM95 &radio)
+int16_t bitr(float bitrate, RFM95 &radio)
 {
     if ((bitrate < BITR_MIN) || (bitrate > BITR_MAX))
     {
