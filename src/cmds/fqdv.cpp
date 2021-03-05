@@ -2,12 +2,8 @@
 
 int16_t fqdv(float deviation, RFM95 &radio)
 {
-    if ((deviation < FQDV_MIN) || (deviation > FQDV_MAX))
-    {
-        return INVALID_PARAMETER;
-    }
-    Serial.print(F("[FQDV] deviation set to "));
+    Serial.print(F("[FQDV] Deviation set to "));
     Serial.print(deviation);
-    Serial.print(F(" kbps"));
+    Serial.println(F(" kHz"));
     return radio.setFrequencyDeviation(deviation);
 }
