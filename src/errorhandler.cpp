@@ -2,21 +2,22 @@
 
 uint8_t printError(uint8_t errorCode)
 {
+    Serial.print(F(ERROR_PREFIX));
     switch (errorCode)
     {
     case COMMAND_NOT_FOUND:
-        Serial.println(F(GEN_ERROR("Unknown command.")));
+        Serial.println(F("Unknown command."));
         break;
     case RUN_SUCCESS:
         break;
     case INVALID_PARAMETER:
-        Serial.println(F(GEN_ERROR("Invalid parameters. Please check your inputs.")));
+        Serial.println(F("Invalid parameters. Please check your inputs."));
         break;
     case NOT_YET_IMPLEMENTED:
-        Serial.println(F(GEN_ERROR("This command is not implemented yet.")));
+        Serial.println(F("This command is not implemented yet."));
         break;
     case RADIOLIB_ERROR:
-        Serial.println(F(GEN_ERROR("RadioLib encountered an error. Check your code.")));
+        Serial.println(F("RadioLib encountered an error. Check your code."));
         break;
     }
     return RUN_SUCCESS;

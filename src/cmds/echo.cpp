@@ -2,6 +2,6 @@
 
 uint8_t echo()
 {
-    Serial.println("Hello, world!");
+    Serial.println(F("Hello, world!"));
     return RUN_SUCCESS;
 }

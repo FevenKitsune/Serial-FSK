@@ -1,7 +1,7 @@
 #ifndef ERRORHANDLER_H
 #define ERRORHANDLER_H
 
-#define GEN_ERROR(e) "[ERROR] " e
+#define ERROR_PREFIX "[ERROR] "
 
 #include <Arduino.h>
 #include "errorcodes.hpp"
