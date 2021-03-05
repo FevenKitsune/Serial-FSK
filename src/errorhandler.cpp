@@ -40,6 +40,9 @@ int16_t printError(int16_t errorCode)
     case ERR_RX_TIMEOUT:
         Serial.println(F("Timeout while waiting for recieve."));
         break;
+    case ERR_INVALID_FREQUENCY:
+        Serial.println(F("Invalid carrier frequency."));
+        break;
 
     /*
      * Unknown error handling.

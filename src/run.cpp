@@ -8,6 +8,7 @@ int16_t run(String &serial_data, RFM95 &radio)
     if (command == "bitr") return bitr(arg(serial_data, 1).toFloat(), radio);
     if (command == "echo") return echo();
     if (command == "fqdv") return fqdv(arg(serial_data, 1).toFloat(), radio);
+    if (command == "freq") return freq(arg(serial_data, 1).toFloat(), radio);
     if (command == "help") return help();
     if (command == "recv") return recv(radio);
     if (command == "rxbw") return rxbw(arg(serial_data, 1).toFloat(), radio);

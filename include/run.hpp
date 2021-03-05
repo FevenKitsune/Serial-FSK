@@ -7,6 +7,7 @@
 #include "cmds/bitr.hpp"
 #include "cmds/echo.hpp"
 #include "cmds/fqdv.hpp"
+#include "cmds/freq.hpp"
 #include "cmds/help.hpp"
 #include "cmds/recv.hpp"
 #include "cmds/rxbw.hpp"
