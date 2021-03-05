@@ -3,7 +3,7 @@
 int16_t printError(int16_t errorCode)
 {
     // Pretty-print prefix for error logging.
-    Serial.print(F(ERROR_PREFIX));
+    if (errorCode != ERR_NONE) Serial.print(F(ERROR_PREFIX));
     
     // Error handling switch statement.
     switch (errorCode)
