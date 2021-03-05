@@ -5,6 +5,8 @@
 
 #define STATUS_PIN 13
 
+// Default encoding: RADIOLIB_ENCODING_NRZ
+
 // LoRa Module pinouts based on https://learn.adafruit.com/assets/46254
 RFM95 fsk = new Module(8, 3, 4);
 
