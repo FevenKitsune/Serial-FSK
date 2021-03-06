@@ -43,6 +43,9 @@ int16_t printError(int16_t errorCode)
     case ERR_INVALID_FREQUENCY:
         Serial.println(F("Invalid carrier frequency."));
         break;
+    case ERR_INVALID_OUTPUT_POWER:
+        Serial.println(F("Invalid transmission power."));
+        break;
 
     /*
      * Unknown error handling.
