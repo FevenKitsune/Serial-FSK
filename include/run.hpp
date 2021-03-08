@@ -10,6 +10,7 @@
 #include "cmds/freq.hpp"
 #include "cmds/help.hpp"
 #include "cmds/recv.hpp"
+#include "cmds/rept.hpp"
 #include "cmds/rxbw.hpp"
 #include "cmds/send.hpp"
 #include "cmds/txpw.hpp"
