@@ -2,7 +2,11 @@
 
 int16_t printError(int16_t errorCode)
 {
-    // Pretty-print prefix for error logging.
+    /*
+     * If there is an error, print the error prefix to prepare for error printing.
+     * Because all function returns are passed through here, this ensures the return
+     * code was actually an error.
+     */
     if (errorCode != ERR_NONE) Serial.print(F(ERROR_PREFIX));
     
     // Error handling switch statement.
