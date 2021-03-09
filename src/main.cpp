@@ -23,6 +23,8 @@ void setup()
 
   // Begin serial connection at specified preprocessor constant baud rate.
   Serial.begin(BAUD_RATE);
+
+  // A lower timeout reduces command latency.
   Serial.setTimeout(50);
 
   while (!Serial)
