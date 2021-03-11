@@ -21,6 +21,7 @@ int16_t help()
     Serial.println(F("recv [no arg]\n  Recieve a message."));
     Serial.println(F("rept [#, int] [ms, int] [msg, String]\n  Send a message # number of times, with a ms delay between each transmission."));
     Serial.println(F("rxbw [KHz, float]\n  Set FSK reciever bandwidth in KHz. Range: 2.6≤x≤250.0"));
+    Serial.println(F("scrc [CRCenable, bool]\n  Enable or disable CRC. Range: 0≤x≤1"));
     Serial.println(F("send [msg, String]\n  Transmit a message over FSK."));
     Serial.println(F("txpw [dBm, int]\n  Set transmission power in dBm. Range: 2≤x≤17"));
     return ERR_NONE;
