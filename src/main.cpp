@@ -9,6 +9,7 @@
 #define STATUS_LIGHT_OFF digitalWrite(STATUS_PIN, LOW);
 
 // Default encoding: RADIOLIB_ENCODING_NRZ
+// Default sync words: 0x12, 0xAD
 
 // LoRa Module pinouts based on https://learn.adafruit.com/assets/46254
 RFM95 fsk = new Module(8, 3, 4);
