@@ -1,5 +1,5 @@
-#ifndef RXBW_H
-#define RXBW_H
+#ifndef SCRC_H
+#define SCRC_H
 
 #include <Arduino.h>
 #include <RadioLib.h>
